@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 django-crispy-forms = "*"
 gunicorn = "*"
+django-smtp-ssl = "*"
 
 [requires]
 python_version = "3.8"
