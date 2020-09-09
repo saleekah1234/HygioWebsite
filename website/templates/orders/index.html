@@ -1,38 +1,35 @@
 <html>
+  {% load static %}
   <head>
     <title>Hygieo | Sanitizers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% load static %}
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{% static './assets/images/favicon/apple-touch-icon.png' %}"
+      href="{% static 'images/favicon/apple-touch-icon.png' %}"
     />
     
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="{% static './assets/images/favicon/favicon-32x32.png' %}"
+      href="{% static 'images/favicon/favicon-32x32.png' %}"
     />
   
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="{% static './assets/images/favicon/favicon-16x16.png' %}"
+      href="{% static 'images/favicon/favicon-16x16.png' %}"
     />
-    {% load static %}
-    <link rel="manifest" href="{% static './assets/images/favicon/site.webmanifest' %}" />
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}" />
 
     <!-- styles -->
-    <link rel="stylesheet" href="{% static './assets/css/bootstrap.min.css'%}" />
-    <link type="text/css" rel="stylesheet" href="{% static './assets/css/style.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}" />
     <link
       rel="stylesheet"
-      href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' %}"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!-- <link
       rel="stylesheet"
@@ -45,7 +42,7 @@
     <header>
       <nav id="mynav" class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#"
-          ><img src="{ % static './assets/images/logo1.jpg' %}"/></a>
+          ><img src="{% static 'images/logo1.jpg' %}"/></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -93,7 +90,7 @@
         <div class="row">
           <div class="col-md-6 d-flex order-md-2 align-items-center">
             <img
-              src="{% static './assets/images/about_illustration.svg'%}"
+              src="{% static 'images/about_illustration.svg'%}"
               alt="about-teams-illustration"
             />
           </div>
@@ -193,7 +190,7 @@
             class="col-md-6 order-md-2 d-flex align-items-center justify-content-center"
           >
             <img
-              src="{% static './assets/images/order_illustration.svg'%}"
+              src="{% static 'images/order_illustration.svg' %}"
               alt="order-illustration"
               class="item-image"
             />
@@ -262,7 +259,7 @@
             <div class="card">
               <div class="d-flex m-3 align-items-centes justify-content-center">
                 <img
-                  src="{% static 'https://picsum.photos/200.jpg' %}"
+                  src="https://picsum.photos/200.jpg"
                   alt="loading..."
                   class="team-profile"
                 />
@@ -282,7 +279,7 @@
             <div class="card">
               <div class="d-flex m-3 align-items-centes justify-content-center">
                 <img
-                  src="{% static 'https://picsum.photos/200.jpg' %}"
+                  src="https://picsum.photos/200.jpg"
                   alt="loading..."
                   class="team-profile"
                 />
@@ -358,7 +355,7 @@
 
             <p>
               <a
-                href="{% static 'https://goo.gl/maps/UL5GNMi9VQu'%}"
+                href="https://goo.gl/maps/UL5GNMi9VQu"
                 style="color: white; padding-top: 2rem"
                 >Get Directions on Google Maps</a
               >
@@ -399,9 +396,9 @@
         </div>
       </div>
     </footer>
-    <script src="{% static './assets/js/jquery.min.js'%}"></script>
-    <script src="{% static './assets/js/bootstrap.bundle.min.js'%}"></script>
-    <script src="{% static './assets/js/mailapi.js'%}"></script>
-    <script src="{% static './assets/js/scripts.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'js/mailapi.js'%}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
   </body>
 </html>
