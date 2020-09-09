@@ -2,9 +2,11 @@ from django.db import models
 
 
 class Order(models.Model):
-    name=models.TextField(max_length=50)
+    Name=models.TextField(max_length=35)
     #phone=models.PhoneField(blank=True, help_text='Contact phone number')
-    item=models.TextField(max_length=50)
+    Item=models.TextField(max_length=35)
+    Quantity=models.TextField(max_length=35)
+    Phonenumber=models.TextField(max_length=35)
     
 
 

@@ -7,8 +7,10 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ('name','item')
+        fields = ('Name','Item','Quantity','Phonenumber')
     def __init__(self, *args, **kwargs):
         super(OrderForm, self).__init__(*args, **kwargs) # Call to ModelForm constructor
-        self.fields['name'].widget.attrs['rows'] = 5
-        self.fields['item'].widget.attrs['rows'] = 5
+        self.fields['Name'].widget.attrs['rows'] = 2
+        self.fields['Item'].widget.attrs['rows'] = 2
+        self.fields['Quantity'].widget.attrs['rows'] = 2
+        self.fields['Phonenumber'].widget.attrs['rows'] = 2
