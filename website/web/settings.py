@@ -15,11 +15,11 @@ import os
 from decouple import config
 
 
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
-EMAIL_HOST = config('EMAIL_HOST', default='localhost')
-EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
-ROOT_PATH = os.path.dirname(__file__)
+#SECRET_KEY = config('SECRET_KEY')
+#DEBUG = config('DEBUG', default=False, cast=bool)
+#EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+#EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
+#ROOT_PATH = os.path.dirname(__file__)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
