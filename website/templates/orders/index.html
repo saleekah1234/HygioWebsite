@@ -1,5 +1,6 @@
 <html>
   {% load static %}
+  {% load crispy_forms_tags %}
   <head>
     <title>Hygieo | Sanitizers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -197,53 +198,12 @@
           </div>
           <div class="col-md-6">
             <h2 class="title">Order Now</h2>
-            <form
-              id="my-form"
-              action="https://formspree.io/xnqgebjp"
-              method="POST"
-            >
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input
-                  type="text"
-                  name="phone"
-                  class="form-control"
-                  id="phone"
-                />
-              </div>
-              <div class="form-group">
-                <label for="name">Product Name</label>
-                <input
-                  type="text"
-                  name="product"
-                  class="form-control"
-                  id="name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="quantity">Quantity</label>
-                <input
-                  type="number"
-                  name="quantity"
-                  class="form-control"
-                  id="quantity"
-                />
-              </div>
-              <button type="submit" id="my-form-button" class="cta">
-                Order
-              </button>
-              <p id="my-form-status"></p>
-            </form>
+            
+<form method="post">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button type="submit">Order</button>
+</form>
           </div>
         </div>
       </div>
