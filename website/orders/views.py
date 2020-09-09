@@ -14,7 +14,7 @@ def viewhygio(request):
         ctx={'form':form}
         message = get_template('orders/mail.html').render(ctx)
         msg = EmailMessage(
-        'Subject',
+        'New Order',
         message,
         'ckreachme1234@gmail.com',
         ['cksaleekah@gmail.com'])

@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
+
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
 ROOT_PATH = os.path.dirname(__file__)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,6 +35,7 @@ SECRET_KEY = '6z=o3^#%ckyzwcje3zdcbwxl479nky+!+dtb60x9mg*jrtjb!^'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -129,7 +137,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 #django_heroku.settings(locals())
 
 EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '#ckreachme1234@gmail.com'
-EMAIL_HOST_PASSWORD = '*****'
+EMAIL_HOST = 'smtp@gmail.com'
+EMAIL_HOST_USER = 'fasdfa@gmail.com'
+EMAIL_HOST_PASSWORD = 'ntlmkd#2020'
 EMAIL_PORT = '465'
